@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/logic/game.js"></script>
+</head>
+<body>
+	<div class="container" id="main">
+
+		<div class="row" id="titleCard">
+			<div class="col-xs-12 col-sm-8 col-m-4 title">
+				<h1>Crystal Collector!</h1>
+			</div>
+		</div>
+
+		<div class="row jumbotron" id="instructions">
+			<div class="col-8">
+			<p>Welcome Traveler! Collect the crystals and win the game! Acquire too many, and lose your life!</p>
+
+			<p>At the start of each round, you will be given a target score. You win by matching your score to it exactly, without going over.</p>
+
+			<p>This can be done by harvesting crystals! Each crystal will have a hidden, secret score, that will add to your total once you click them. Keep collecting crystals, but be careful! If your score increases past the target score, you will lose and the game will reset!</p>
+
+			<p>If you win, the game resets so you can collect even MORE crystals! Be careful though, the value of each crystal will change every round!</p>
+			</div>
+			<img class="col-4" src = "assets/images/crystalbag.jpg">
+			
+		</div>
+
+		<div class="row">
+			<div class="col-6 game-info">
+				<h3>Target Score: <span id="target-score">0</span></h3>
+			</div>
+			<div class="col-4 game-info">
+				<div class="row"><h3 class= "win-loss">Wins: <span id="wins">0</span></h3></div>
+				<div class="row"><h3 class ="win-loss">Losses: <span id="losses">0</span></h3></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="crystal-buttons">
+					
+			</div>
+				
+		</div>
+
+		<div class="row" id="score">
+			<div class="col 6">
+				<div class="row game-info col-4" id="your-score-is">Your total score is:</div>
+				<div class="row game-info col-4"><h1 id="display-score">0</h1></div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
